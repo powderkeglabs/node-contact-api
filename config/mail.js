@@ -8,6 +8,7 @@ var config = {
     mail: {
       host: 'smtp.mandrillapp.com',
       port: 587,
+      mandrillApiKey: configDev.MAIL_PASS,
       auth: {
         user: configDev.MAIL_USER,
         pass: configDev.MAIL_PASS
@@ -18,6 +19,7 @@ var config = {
     mail: {
       host: 'smtp.mandrillapp.com',
       port: 587,
+      mandrillApiKey: process.env.MAIL_PASS,
       auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS

@@ -18,7 +18,8 @@ router.post('/Contact/quorum', mailValidate, function(req, res) {
   var phone = req.body.phone;
 
   var data = {
-    from: sprintf('%s <%s>', appConfig.name, appConfig.email),
+    fromName: appConfig.name,
+    fromEmail: appConfig.email,
     to: appConfig.email,
     replyTo: sprintf('%s <%s>', name, email),
     subject: sprintf(appConfig.subject, name),

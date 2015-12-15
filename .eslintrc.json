@@ -6,7 +6,8 @@
     "rules": {
       "mocha/no-exclusive-tests": 2,
       "no-unused-vars": 0,
-      "new-cap": 0
+      "new-cap": 0,
+      "camelcase": 0
     },
     "env": {
       "node": true,
